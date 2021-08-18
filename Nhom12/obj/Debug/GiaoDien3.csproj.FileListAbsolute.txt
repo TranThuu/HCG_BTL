@@ -1,0 +1,16 @@
+E:\SUBJECTS\HeChuyenGia\BTL\GiaoDien3\GiaoDien3\bin\Debug\GiaoDien3.exe.config
+E:\SUBJECTS\HeChuyenGia\BTL\GiaoDien3\GiaoDien3\bin\Debug\GiaoDien3.exe
+E:\SUBJECTS\HeChuyenGia\BTL\GiaoDien3\GiaoDien3\bin\Debug\GiaoDien3.pdb
+E:\SUBJECTS\HeChuyenGia\BTL\GiaoDien3\GiaoDien3\obj\Debug\GiaoDien3.csproj.AssemblyReference.cache
+E:\SUBJECTS\HeChuyenGia\BTL\GiaoDien3\GiaoDien3\obj\Debug\GiaoDien3.fMain.resources
+E:\SUBJECTS\HeChuyenGia\BTL\GiaoDien3\GiaoDien3\obj\Debug\GiaoDien3.Properties.Resources.resources
+E:\SUBJECTS\HeChuyenGia\BTL\GiaoDien3\GiaoDien3\obj\Debug\GiaoDien3.csproj.GenerateResource.cache
+E:\SUBJECTS\HeChuyenGia\BTL\GiaoDien3\GiaoDien3\obj\Debug\GiaoDien3.csproj.CoreCompileInputs.cache
+E:\SUBJECTS\HeChuyenGia\BTL\GiaoDien3\GiaoDien3\obj\Debug\GiaoDien3.exe
+E:\SUBJECTS\HeChuyenGia\BTL\GiaoDien3\GiaoDien3\obj\Debug\GiaoDien3.pdb
+E:\SUBJECTS\HeChuyenGia\BTL\GiaoDien3\GiaoDien3\bin\Debug\FontAwesome.Sharp.dll
+E:\SUBJECTS\HeChuyenGia\BTL\GiaoDien3\GiaoDien3\obj\Debug\GiaoDien3.csproj.CopyComplete
+E:\SUBJECTS\HeChuyenGia\BTL\GiaoDien3\GiaoDien3\obj\Debug\GiaoDien3.fTuVan.resources
+E:\SUBJECTS\HeChuyenGia\BTL\GiaoDien3\GiaoDien3\obj\Debug\GiaoDien3.fCoSoTriThuc.resources
+E:\SUBJECTS\HeChuyenGia\BTL\GiaoDien3\GiaoDien3\obj\Debug\GiaoDien3.fHuongDan.resources
+E:\SUBJECTS\HeChuyenGia\BTL\GiaoDien3\GiaoDien3\obj\Debug\GiaoDien3.fTeam.resources

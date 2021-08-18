@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FE4E48D1-3132-4E28-AD64-BE03B17E1278}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Nhom12</RootNamespace>
+    <AssemblyName>Nhom12</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=5.15.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.5.15.3\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenHtmlToPdf, Version=1.12.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenHtmlToPdf.1.12.0.0\lib\net45\OpenHtmlToPdf.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAO\DataProcessing.cs" />
+    <Compile Include="DAO\DBConnection.cs" />
+    <Compile Include="DAO\DP_CauHinh.cs" />
+    <Compile Include="DAO\DP_DuLieu.cs" />
+    <Compile Include="DAO\DP_Laptop.cs" />
+    <Compile Include="DAO\DP_Luat.cs" />
+    <Compile Include="DTO\CauHinh.cs" />
+    <Compile Include="DTO\GiaiThich.cs" />
+    <Compile Include="DTO\Laptop.cs" />
+    <Compile Include="DTO\Luat.cs" />
+    <Compile Include="DTO\Question.cs" />
+    <Compile Include="DTO\ThuatToanSuyDienTien.cs" />
+    <Compile Include="fCauHinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fCauHinh.Designer.cs">
+      <DependentUpon>fCauHinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fGiaiThich.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fGiaiThich.Designer.cs">
+      <DependentUpon>fGiaiThich.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fKetQua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fKetQua.Designer.cs">
+      <DependentUpon>fKetQua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fLaptop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fLaptop.Designer.cs">
+      <DependentUpon>fLaptop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fHuongDan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fHuongDan.Designer.cs">
+      <DependentUpon>fHuongDan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fLuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fLuat.Designer.cs">
+      <DependentUpon>fLuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fMain.Designer.cs">
+      <DependentUpon>fMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fSuaLapTop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fSuaLapTop.Designer.cs">
+      <DependentUpon>fSuaLapTop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fTeam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fTeam.Designer.cs">
+      <DependentUpon>fTeam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fThemLapTop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fThemLapTop.Designer.cs">
+      <DependentUpon>fThemLapTop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fTuVan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fTuVan.Designer.cs">
+      <DependentUpon>fTuVan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fCauHinh.resx">
+      <DependentUpon>fCauHinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fGiaiThich.resx">
+      <DependentUpon>fGiaiThich.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fKetQua.resx">
+      <DependentUpon>fKetQua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fLaptop.resx">
+      <DependentUpon>fLaptop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fHuongDan.resx">
+      <DependentUpon>fHuongDan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fLuat.resx">
+      <DependentUpon>fLuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fMain.resx">
+      <DependentUpon>fMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fSuaLapTop.resx">
+      <DependentUpon>fSuaLapTop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fTeam.resx">
+      <DependentUpon>fTeam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fThemLapTop.resx">
+      <DependentUpon>fThemLapTop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fTuVan.resx">
+      <DependentUpon>fTuVan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\nen2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thêm tiêu đề.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\anhNen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\nen3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\nen4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\175013_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Untitled-1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
