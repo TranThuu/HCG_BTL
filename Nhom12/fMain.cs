@@ -137,6 +137,7 @@ namespace Nhom12
         private void btnThoat_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color5,0);
+            Application.Exit();
         }
 
         private void Reset()

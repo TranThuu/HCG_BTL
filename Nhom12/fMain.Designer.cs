@@ -38,6 +38,7 @@ namespace Nhom12
             this.panel2 = new System.Windows.Forms.Panel();
             this.labTitle = new System.Windows.Forms.Label();
             this.panelContent = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.iconTeam = new FontAwesome.Sharp.IconPictureBox();
             this.btnMax = new FontAwesome.Sharp.IconButton();
             this.btnClose = new FontAwesome.Sharp.IconButton();
@@ -55,6 +56,8 @@ namespace Nhom12
             this.pnlSubMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panelContent.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconTeam)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -159,17 +162,29 @@ namespace Nhom12
             this.labTitle.Name = "labTitle";
             this.labTitle.Size = new System.Drawing.Size(86, 30);
             this.labTitle.TabIndex = 0;
-            this.labTitle.Text = "label1";
+            this.labTitle.Text = "HOME";
             // 
             // panelContent
             // 
             this.panelContent.BackColor = System.Drawing.Color.White;
+            this.panelContent.Controls.Add(this.pictureBox1);
             this.panelContent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContent.ForeColor = System.Drawing.Color.Black;
             this.panelContent.Location = new System.Drawing.Point(316, 74);
             this.panelContent.Name = "panelContent";
             this.panelContent.Size = new System.Drawing.Size(1075, 675);
             this.panelContent.TabIndex = 3;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::Nhom12.Properties.Resources.Untitled_11;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1075, 675);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // iconTeam
             // 
@@ -458,6 +473,8 @@ namespace Nhom12
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panelContent.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconTeam)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             this.ResumeLayout(false);
@@ -487,6 +504,7 @@ namespace Nhom12
         private FontAwesome.Sharp.IconButton btnLaptop;
         private FontAwesome.Sharp.IconButton btnCauHinh;
         private System.Windows.Forms.Panel pnlSubMenu;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

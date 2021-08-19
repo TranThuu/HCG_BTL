@@ -73,9 +73,9 @@ namespace Nhom12.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap anhNen {
+        internal static System.Drawing.Bitmap aboutOurTeam {
             get {
-                object obj = ResourceManager.GetObject("anhNen", resourceCulture);
+                object obj = ResourceManager.GetObject("aboutOurTeam", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,29 +83,9 @@ namespace Nhom12.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap nen2 {
+        internal static System.Drawing.Bitmap giaiThich {
             get {
-                object obj = ResourceManager.GetObject("nen2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap nen3 {
-            get {
-                object obj = ResourceManager.GetObject("nen3", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap nen31 {
-            get {
-                object obj = ResourceManager.GetObject("nen31", resourceCulture);
+                object obj = ResourceManager.GetObject("giaiThich", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -136,6 +116,16 @@ namespace Nhom12.Properties {
         internal static System.Drawing.Bitmap Untitled_1 {
             get {
                 object obj = ResourceManager.GetObject("Untitled-1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Untitled_11 {
+            get {
+                object obj = ResourceManager.GetObject("Untitled-11", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
