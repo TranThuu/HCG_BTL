@@ -16,5 +16,11 @@ namespace Nhom12.DAO
             dt = daProcess.ShowTable("SELECT * FROM CauHinh");
             return dt;
         }
+        public DataTable showLapTopByID(string id)
+        {
+            DataTable tbl = new DataTable();
+            tbl = daProcess.ShowTable("SELECT ID,Description FROM CauHinh WHERE ID = '" + id + "'");
+            return tbl;
+        }
     }
 }

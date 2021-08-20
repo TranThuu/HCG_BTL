@@ -106,3 +106,26 @@ E:\SUBJECTS\HeChuyenGia\BTL_HeChuyenGia\HCG_BTL\Nhom12\obj\Debug\Nhom12_HCG.cspr
 E:\SUBJECTS\HeChuyenGia\BTL_HeChuyenGia\HCG_BTL\Nhom12\obj\Debug\Nhom12_HCG.csproj.CopyComplete
 E:\SUBJECTS\HeChuyenGia\BTL_HeChuyenGia\HCG_BTL\Nhom12\obj\Debug\Nhom12.exe
 E:\SUBJECTS\HeChuyenGia\BTL_HeChuyenGia\HCG_BTL\Nhom12\obj\Debug\Nhom12.pdb
+E:\kỳ 7\HCG\btl\HCG_BTL\Nhom12\obj\Debug\Nhom12_HCG.csprojAssemblyReference.cache
+E:\kỳ 7\HCG\btl\HCG_BTL\Nhom12\obj\Debug\Nhom12.fCauHinh.resources
+E:\kỳ 7\HCG\btl\HCG_BTL\Nhom12\obj\Debug\Nhom12.fGiaiThich.resources
+E:\kỳ 7\HCG\btl\HCG_BTL\Nhom12\obj\Debug\Nhom12.fKetQua.resources
+E:\kỳ 7\HCG\btl\HCG_BTL\Nhom12\obj\Debug\Nhom12.fLaptop.resources
+E:\kỳ 7\HCG\btl\HCG_BTL\Nhom12\obj\Debug\Nhom12.fHuongDan.resources
+E:\kỳ 7\HCG\btl\HCG_BTL\Nhom12\obj\Debug\Nhom12.fLuat.resources
+E:\kỳ 7\HCG\btl\HCG_BTL\Nhom12\obj\Debug\Nhom12.fMain.resources
+E:\kỳ 7\HCG\btl\HCG_BTL\Nhom12\obj\Debug\Nhom12.fSuaLapTop.resources
+E:\kỳ 7\HCG\btl\HCG_BTL\Nhom12\obj\Debug\Nhom12.fTeam.resources
+E:\kỳ 7\HCG\btl\HCG_BTL\Nhom12\obj\Debug\Nhom12.fThemLapTop.resources
+E:\kỳ 7\HCG\btl\HCG_BTL\Nhom12\obj\Debug\Nhom12.fTuVan.resources
+E:\kỳ 7\HCG\btl\HCG_BTL\Nhom12\obj\Debug\Nhom12.Properties.Resources.resources
+E:\kỳ 7\HCG\btl\HCG_BTL\Nhom12\obj\Debug\Nhom12_HCG.csproj.GenerateResource.cache
+E:\kỳ 7\HCG\btl\HCG_BTL\Nhom12\obj\Debug\Nhom12_HCG.csproj.CoreCompileInputs.cache
+E:\kỳ 7\HCG\btl\HCG_BTL\Nhom12\obj\Debug\Nhom12.exe
+E:\kỳ 7\HCG\btl\HCG_BTL\Nhom12\obj\Debug\Nhom12.pdb
+E:\kỳ 7\HCG\btl\HCG_BTL\Nhom12\bin\Debug\Nhom12.exe.config
+E:\kỳ 7\HCG\btl\HCG_BTL\Nhom12\bin\Debug\Nhom12.exe
+E:\kỳ 7\HCG\btl\HCG_BTL\Nhom12\bin\Debug\Nhom12.pdb
+E:\kỳ 7\HCG\btl\HCG_BTL\Nhom12\bin\Debug\FontAwesome.Sharp.dll
+E:\kỳ 7\HCG\btl\HCG_BTL\Nhom12\bin\Debug\OpenHtmlToPdf.dll
+E:\kỳ 7\HCG\btl\HCG_BTL\Nhom12\obj\Debug\Nhom12_HCG.csproj.CopyComplete
