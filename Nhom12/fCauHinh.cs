@@ -80,7 +80,11 @@ namespace Nhom12
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("@id", txtID.Text);
                 cmd.Parameters.AddWithValue("@mt", txtMoTa.Text);
-                
+                if (txtMoTa.Text == "")
+                {
+                    MessageBox.Show("MÔ TẢ CẤU HÌNH KHÔNG ĐƯỢC ĐỂ TRỐNG", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
                 cmd.ExecuteNonQuery();
                 fCauHinh_Load(sender, e);
 
@@ -88,9 +92,9 @@ namespace Nhom12
             catch (Exception ex)
             {
                 if (ex.Message.Contains("duplicate key"))
-                    MessageBox.Show("KHÔNG THÊM ĐƯỢC CẤU HÌNH MỚI VÌ TRÙNG ID", "error");
+                    MessageBox.Show("KHÔNG THÊM ĐƯỢC CẤU HÌNH MỚI VÌ TRÙNG ID", "error",MessageBoxButtons.OK, MessageBoxIcon.Error);
                 else
-                    MessageBox.Show(ex.Message, "error");
+                    MessageBox.Show(ex.Message, "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
