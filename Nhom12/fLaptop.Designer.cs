@@ -43,7 +43,6 @@ namespace Nhom12
             this.dID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dTenLaptop = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnTim = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -64,7 +63,7 @@ namespace Nhom12
             this.label1.Location = new System.Drawing.Point(85, 28);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(23, 18);
+            this.label1.Size = new System.Drawing.Size(28, 23);
             this.label1.TabIndex = 1;
             this.label1.Text = "ID";
             // 
@@ -74,7 +73,7 @@ namespace Nhom12
             this.txtID.Location = new System.Drawing.Point(208, 28);
             this.txtID.Margin = new System.Windows.Forms.Padding(4);
             this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(261, 25);
+            this.txtID.Size = new System.Drawing.Size(261, 30);
             this.txtID.TabIndex = 2;
             // 
             // btnThem
@@ -85,7 +84,7 @@ namespace Nhom12
             this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThem.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem.ForeColor = System.Drawing.Color.Navy;
-            this.btnThem.Location = new System.Drawing.Point(327, 89);
+            this.btnThem.Location = new System.Drawing.Point(475, 89);
             this.btnThem.Margin = new System.Windows.Forms.Padding(4);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(108, 50);
@@ -111,7 +110,7 @@ namespace Nhom12
             this.txtSoTrang.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtSoTrang.Location = new System.Drawing.Point(68, 375);
             this.txtSoTrang.Name = "txtSoTrang";
-            this.txtSoTrang.Size = new System.Drawing.Size(100, 25);
+            this.txtSoTrang.Size = new System.Drawing.Size(100, 30);
             this.txtSoTrang.TabIndex = 3;
             this.txtSoTrang.Text = "1";
             this.txtSoTrang.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -218,7 +217,6 @@ namespace Nhom12
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.Controls.Add(this.btnXoa);
             this.panel2.Controls.Add(this.btnSua);
             this.panel2.Controls.Add(this.btnThem);
             this.panel2.Controls.Add(this.btnTim);
@@ -233,23 +231,6 @@ namespace Nhom12
             this.panel2.Size = new System.Drawing.Size(1040, 156);
             this.panel2.TabIndex = 5;
             // 
-            // btnXoa
-            // 
-            this.btnXoa.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnXoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(118)))), ((int)(((byte)(176)))));
-            this.btnXoa.FlatAppearance.BorderSize = 0;
-            this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnXoa.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.ForeColor = System.Drawing.Color.Navy;
-            this.btnXoa.Location = new System.Drawing.Point(619, 89);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(4);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(108, 50);
-            this.btnXoa.TabIndex = 3;
-            this.btnXoa.Text = "Xóa";
-            this.btnXoa.UseVisualStyleBackColor = false;
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
-            // 
             // btnSua
             // 
             this.btnSua.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -258,7 +239,7 @@ namespace Nhom12
             this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSua.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSua.ForeColor = System.Drawing.Color.Navy;
-            this.btnSua.Location = new System.Drawing.Point(471, 89);
+            this.btnSua.Location = new System.Drawing.Point(732, 89);
             this.btnSua.Margin = new System.Windows.Forms.Padding(4);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(108, 50);
@@ -294,7 +275,7 @@ namespace Nhom12
             this.label2.Location = new System.Drawing.Point(564, 26);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(88, 18);
+            this.label2.Size = new System.Drawing.Size(111, 23);
             this.label2.TabIndex = 1;
             this.label2.Text = "Tên Laptop";
             // 
@@ -304,7 +285,7 @@ namespace Nhom12
             this.txtTen.Location = new System.Drawing.Point(687, 28);
             this.txtTen.Margin = new System.Windows.Forms.Padding(4);
             this.txtTen.Name = "txtTen";
-            this.txtTen.Size = new System.Drawing.Size(261, 25);
+            this.txtTen.Size = new System.Drawing.Size(261, 30);
             this.txtTen.TabIndex = 2;
             // 
             // panel3
@@ -319,7 +300,7 @@ namespace Nhom12
             // 
             // fLaptop
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1040, 568);
@@ -349,7 +330,6 @@ namespace Nhom12
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtTen;
         private System.Windows.Forms.Button btnSua;
-        private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.DataGridView dgvLaptop;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dID;

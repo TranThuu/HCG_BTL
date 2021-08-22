@@ -18,6 +18,7 @@ namespace Nhom12
         public fCauHinh()
         {
             InitializeComponent();
+            btnSua.Enabled = false;
         }
         private void dgvStyle()
         {
@@ -63,6 +64,8 @@ namespace Nhom12
 
         private void dgvLaptop_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            txtID.Enabled = false;
+            btnSua.Enabled = true;
             int i;
             i = dgvLaptop.CurrentRow.Index;
             txtID.Text = dgvLaptop.Rows[i].Cells[0].Value.ToString();
@@ -123,28 +126,31 @@ namespace Nhom12
             }
         }
 
-        private void btnXoa_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                SqlConnection conn = dbConn.getConnect();
-                conn.Open();
-                String sql = "DELETE CauHinh WHERE ID=@id";
-                SqlCommand cmd = new SqlCommand(sql, conn);
-                cmd.Parameters.AddWithValue("@id", txtID.Text);
-                cmd.ExecuteNonQuery();
+        //private void btnXoa_Click(object sender, EventArgs e)
+        //{
+        //    try
+        //    {
+        //        SqlConnection conn = dbConn.getConnect();
+        //        conn.Open();
+        //        String sql = "DELETE CauHinh WHERE ID=@id";
+        //        SqlCommand cmd = new SqlCommand(sql, conn);
+        //        cmd.Parameters.AddWithValue("@id", txtID.Text);
+        //        cmd.ExecuteNonQuery();
 
-                fCauHinh_Load(sender, e);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
+        //        fCauHinh_Load(sender, e);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        //    }
+        //}
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            Close();
+            txtID.Enabled = true;
+            btnSua.Enabled = false;
+            txtID.Clear();
+            txtMoTa.Clear();
         }
     }
 }

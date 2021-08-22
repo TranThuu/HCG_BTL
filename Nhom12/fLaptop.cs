@@ -75,10 +75,6 @@ namespace Nhom12
             frmSua.Show();
         }
 
-        private void btnXoa_Click(object sender, EventArgs e)
-        {
-
-        }
         //phân trang
 
         private void btnPrevious_Click_1(object sender, EventArgs e)

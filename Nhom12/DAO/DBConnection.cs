@@ -11,9 +11,9 @@ namespace Nhom12.DAO
     {
         public SqlConnection getConnect()
         {
-            // String connString = @"Data Source=.\SQLEXPRESS;Initial Catalog=TuVanLaptop;Integrated Security=True";
+             String connString = @"Data Source=.\SQLEXPRESS;Initial Catalog=TuVanLaptop;Integrated Security=True";
             //String connString = @"Data Source = MCCOMPUTER; Initial Catalog = TuVanLaptop; Integrated Security = True";
-            String connString = @" Data Source=DESKTOP-1EE6NGN\SQLEXPRESS02;Initial Catalog=TuVanLaptop;Integrated Security=True";
+            //String connString = @" Data Source=DESKTOP-1EE6NGN\SQLEXPRESS02;Initial Catalog=TuVanLaptop;Integrated Security=True";
             return new SqlConnection(connString);
         }
 
