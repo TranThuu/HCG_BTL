@@ -81,7 +81,7 @@ namespace Nhom12.DAO
         {
             SqlConnection conn = dbConn.getConnect();
             conn.Open();
-            string sql = "UPDATE LapTop set Name = N'" + ten + "', Price = '" + gia + "', CPU = '" + cpu + "', RAM = '" + ram + "',OCung = '" + oCung + "', ManHinh = N'" + manHinh+ "',CardManHinh = N'" + card + "',HeDieuHanh = '" + hdh + "',KichThuoc = N'" + kichThuoc + "', AnhSP = @Anh where ID = '" + id + "'";
+            string sql = "UPDATE LapTop set Name = N'" + ten + "', Price = '" + gia + "', CPU = '" + cpu + "', RAM = '" + ram + "',OCung = '" + oCung + "', ManHinh = N'" + manHinh+ "',CardManHinh = N'" + card + "',HeDieuHanh = '" + hdh + "',KichThuoc = N'" + kichThuoc + "', AnhLaptop = @Anh where ID = '" + id + "'";
             SqlCommand cmd = new SqlCommand(sql, conn);
 
             cmd.Parameters.AddWithValue("@Anh", ConvertImageToBytes(anh));
