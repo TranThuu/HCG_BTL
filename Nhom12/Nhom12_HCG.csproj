@@ -55,7 +55,6 @@
     <Compile Include="DAO\DataProcessing.cs" />
     <Compile Include="DAO\DBConnection.cs" />
     <Compile Include="DAO\DP_CauHinh.cs" />
-    <Compile Include="DAO\DP_DuLieu.cs" />
     <Compile Include="DAO\DP_Laptop.cs" />
     <Compile Include="DAO\DP_Luat.cs" />
     <Compile Include="DTO\CauHinh.cs" />

@@ -29,9 +29,9 @@ namespace Nhom12
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvLaptop = new System.Windows.Forms.DataGridView();
             this.dID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dveTrai = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -40,21 +40,25 @@ namespace Nhom12
             this.label1 = new System.Windows.Forms.Label();
             this.txtID = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnNotVT = new System.Windows.Forms.Panel();
             this.cmbVT = new System.Windows.Forms.ComboBox();
             this.cmbVP = new System.Windows.Forms.ComboBox();
+            this.btnToiUuHoa = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
+            this.btnReMove = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.lbVT = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.btnReMove = new System.Windows.Forms.Button();
+            this.checkNotVP = new System.Windows.Forms.CheckBox();
+            this.checkNotVT = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLaptop)).BeginInit();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.btnNotVT.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,27 +71,27 @@ namespace Nhom12
             this.dgvLaptop.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvLaptop.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dgvLaptop.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.LightSteelBlue;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Century Gothic", 10.8F);
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvLaptop.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.LightSteelBlue;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 10.8F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvLaptop.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvLaptop.ColumnHeadersHeight = 50;
             this.dgvLaptop.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dID,
             this.dveTrai,
             this.dvePhai});
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Century Gothic", 10.8F);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(161)))), ((int)(((byte)(251)))));
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.AliceBlue;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvLaptop.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 10.8F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(161)))), ((int)(((byte)(251)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.AliceBlue;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvLaptop.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvLaptop.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnF2;
             this.dgvLaptop.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dgvLaptop.Location = new System.Drawing.Point(50, 18);
@@ -95,14 +99,14 @@ namespace Nhom12
             this.dgvLaptop.Name = "dgvLaptop";
             this.dgvLaptop.ReadOnly = true;
             this.dgvLaptop.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.GrayText;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Century Gothic", 10.8F);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvLaptop.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.GrayText;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 10.8F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvLaptop.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvLaptop.RowHeadersVisible = false;
             this.dgvLaptop.RowHeadersWidth = 45;
             this.dgvLaptop.RowTemplate.Height = 40;
@@ -147,7 +151,7 @@ namespace Nhom12
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.AliceBlue;
-            this.btnAdd.Location = new System.Drawing.Point(921, 21);
+            this.btnAdd.Location = new System.Drawing.Point(955, 16);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(103, 39);
@@ -189,36 +193,40 @@ namespace Nhom12
             this.panel1.Size = new System.Drawing.Size(1073, 462);
             this.panel1.TabIndex = 4;
             // 
-            // panel2
+            // btnNotVT
             // 
-            this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.Controls.Add(this.cmbVT);
-            this.panel2.Controls.Add(this.cmbVP);
-            this.panel2.Controls.Add(this.btnCancel);
-            this.panel2.Controls.Add(this.btnThem);
-            this.panel2.Controls.Add(this.btnReMove);
-            this.panel2.Controls.Add(this.btnAdd);
-            this.panel2.Controls.Add(this.btnSua);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.lbVT);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.txtID);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.ForeColor = System.Drawing.Color.Black;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1073, 186);
-            this.panel2.TabIndex = 5;
+            this.btnNotVT.BackColor = System.Drawing.Color.Transparent;
+            this.btnNotVT.Controls.Add(this.checkNotVT);
+            this.btnNotVT.Controls.Add(this.checkNotVP);
+            this.btnNotVT.Controls.Add(this.cmbVT);
+            this.btnNotVT.Controls.Add(this.cmbVP);
+            this.btnNotVT.Controls.Add(this.btnToiUuHoa);
+            this.btnNotVT.Controls.Add(this.btnXoa);
+            this.btnNotVT.Controls.Add(this.btnCancel);
+            this.btnNotVT.Controls.Add(this.btnThem);
+            this.btnNotVT.Controls.Add(this.btnReMove);
+            this.btnNotVT.Controls.Add(this.btnAdd);
+            this.btnNotVT.Controls.Add(this.btnSua);
+            this.btnNotVT.Controls.Add(this.label3);
+            this.btnNotVT.Controls.Add(this.lbVT);
+            this.btnNotVT.Controls.Add(this.label4);
+            this.btnNotVT.Controls.Add(this.label2);
+            this.btnNotVT.Controls.Add(this.label1);
+            this.btnNotVT.Controls.Add(this.txtID);
+            this.btnNotVT.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnNotVT.ForeColor = System.Drawing.Color.Black;
+            this.btnNotVT.Location = new System.Drawing.Point(0, 0);
+            this.btnNotVT.Margin = new System.Windows.Forms.Padding(4);
+            this.btnNotVT.Name = "btnNotVT";
+            this.btnNotVT.Size = new System.Drawing.Size(1073, 186);
+            this.btnNotVT.TabIndex = 5;
             // 
             // cmbVT
             // 
             this.cmbVT.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cmbVT.Font = new System.Drawing.Font("Cambria", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbVT.FormattingEnabled = true;
-            this.cmbVT.Location = new System.Drawing.Point(606, 27);
+            this.cmbVT.Location = new System.Drawing.Point(593, 14);
             this.cmbVT.Name = "cmbVT";
             this.cmbVT.Size = new System.Drawing.Size(272, 29);
             this.cmbVT.TabIndex = 4;
@@ -230,8 +238,42 @@ namespace Nhom12
             this.cmbVP.FormattingEnabled = true;
             this.cmbVP.Location = new System.Drawing.Point(153, 63);
             this.cmbVP.Name = "cmbVP";
-            this.cmbVP.Size = new System.Drawing.Size(327, 29);
+            this.cmbVP.Size = new System.Drawing.Size(289, 29);
             this.cmbVP.TabIndex = 4;
+            // 
+            // btnToiUuHoa
+            // 
+            this.btnToiUuHoa.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnToiUuHoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(161)))), ((int)(((byte)(251)))));
+            this.btnToiUuHoa.FlatAppearance.BorderSize = 0;
+            this.btnToiUuHoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnToiUuHoa.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnToiUuHoa.ForeColor = System.Drawing.Color.AliceBlue;
+            this.btnToiUuHoa.Location = new System.Drawing.Point(871, 118);
+            this.btnToiUuHoa.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.btnToiUuHoa.Name = "btnToiUuHoa";
+            this.btnToiUuHoa.Size = new System.Drawing.Size(169, 52);
+            this.btnToiUuHoa.TabIndex = 3;
+            this.btnToiUuHoa.Text = "Tối ưu hóa luật";
+            this.btnToiUuHoa.UseVisualStyleBackColor = false;
+            this.btnToiUuHoa.Click += new System.EventHandler(this.btnToiUuHoa_Click);
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnXoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(161)))), ((int)(((byte)(251)))));
+            this.btnXoa.FlatAppearance.BorderSize = 0;
+            this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnXoa.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.ForeColor = System.Drawing.Color.AliceBlue;
+            this.btnXoa.Location = new System.Drawing.Point(697, 118);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(109, 52);
+            this.btnXoa.TabIndex = 3;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.UseVisualStyleBackColor = false;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnCancel
             // 
@@ -241,7 +283,7 @@ namespace Nhom12
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancel.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.Color.AliceBlue;
-            this.btnCancel.Location = new System.Drawing.Point(756, 118);
+            this.btnCancel.Location = new System.Drawing.Point(493, 118);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(109, 52);
@@ -258,7 +300,7 @@ namespace Nhom12
             this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThem.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem.ForeColor = System.Drawing.Color.AliceBlue;
-            this.btnThem.Location = new System.Drawing.Point(491, 118);
+            this.btnThem.Location = new System.Drawing.Point(302, 118);
             this.btnThem.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(104, 52);
@@ -266,6 +308,23 @@ namespace Nhom12
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = false;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+            // 
+            // btnReMove
+            // 
+            this.btnReMove.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnReMove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(161)))), ((int)(((byte)(251)))));
+            this.btnReMove.FlatAppearance.BorderSize = 0;
+            this.btnReMove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReMove.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReMove.ForeColor = System.Drawing.Color.AliceBlue;
+            this.btnReMove.Location = new System.Drawing.Point(955, 61);
+            this.btnReMove.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.btnReMove.Name = "btnReMove";
+            this.btnReMove.Size = new System.Drawing.Size(103, 39);
+            this.btnReMove.TabIndex = 3;
+            this.btnReMove.Text = "Remove";
+            this.btnReMove.UseVisualStyleBackColor = false;
+            this.btnReMove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // btnSua
             // 
@@ -276,7 +335,7 @@ namespace Nhom12
             this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSua.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSua.ForeColor = System.Drawing.Color.AliceBlue;
-            this.btnSua.Location = new System.Drawing.Point(221, 118);
+            this.btnSua.Location = new System.Drawing.Point(111, 118);
             this.btnSua.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(106, 52);
@@ -304,7 +363,7 @@ namespace Nhom12
             this.lbVT.AutoSize = true;
             this.lbVT.BackColor = System.Drawing.Color.Transparent;
             this.lbVT.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold);
-            this.lbVT.Location = new System.Drawing.Point(602, 77);
+            this.lbVT.Location = new System.Drawing.Point(589, 69);
             this.lbVT.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbVT.Name = "lbVT";
             this.lbVT.Size = new System.Drawing.Size(0, 23);
@@ -329,7 +388,7 @@ namespace Nhom12
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(529, 24);
+            this.label2.Location = new System.Drawing.Point(516, 11);
             this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 23);
@@ -339,7 +398,7 @@ namespace Nhom12
             // panel3
             // 
             this.panel3.Controls.Add(this.panel1);
-            this.panel3.Controls.Add(this.panel2);
+            this.panel3.Controls.Add(this.btnNotVT);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
@@ -347,22 +406,25 @@ namespace Nhom12
             this.panel3.Size = new System.Drawing.Size(1073, 648);
             this.panel3.TabIndex = 7;
             // 
-            // btnReMove
+            // checkNotVP
             // 
-            this.btnReMove.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnReMove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(161)))), ((int)(((byte)(251)))));
-            this.btnReMove.FlatAppearance.BorderSize = 0;
-            this.btnReMove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReMove.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReMove.ForeColor = System.Drawing.Color.AliceBlue;
-            this.btnReMove.Location = new System.Drawing.Point(921, 66);
-            this.btnReMove.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.btnReMove.Name = "btnReMove";
-            this.btnReMove.Size = new System.Drawing.Size(103, 39);
-            this.btnReMove.TabIndex = 3;
-            this.btnReMove.Text = "Remove";
-            this.btnReMove.UseVisualStyleBackColor = false;
-            this.btnReMove.Click += new System.EventHandler(this.btnRemove_Click);
+            this.checkNotVP.AutoSize = true;
+            this.checkNotVP.Location = new System.Drawing.Point(448, 66);
+            this.checkNotVP.Name = "checkNotVP";
+            this.checkNotVP.Size = new System.Drawing.Size(65, 26);
+            this.checkNotVP.TabIndex = 5;
+            this.checkNotVP.Text = "Not";
+            this.checkNotVP.UseVisualStyleBackColor = true;
+            // 
+            // checkNotVT
+            // 
+            this.checkNotVT.AutoSize = true;
+            this.checkNotVT.Location = new System.Drawing.Point(871, 14);
+            this.checkNotVT.Name = "checkNotVT";
+            this.checkNotVT.Size = new System.Drawing.Size(65, 26);
+            this.checkNotVT.TabIndex = 5;
+            this.checkNotVT.Text = "Not";
+            this.checkNotVT.UseVisualStyleBackColor = true;
             // 
             // fLuat
             // 
@@ -378,8 +440,8 @@ namespace Nhom12
             this.Load += new System.EventHandler(this.fLuat_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLaptop)).EndInit();
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.btnNotVT.ResumeLayout(false);
+            this.btnNotVT.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -392,7 +454,7 @@ namespace Nhom12
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel btnNotVT;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Button btnSua;
@@ -407,5 +469,9 @@ namespace Nhom12
         private System.Windows.Forms.DataGridViewTextBoxColumn dveTrai;
         private System.Windows.Forms.DataGridViewTextBoxColumn dvePhai;
         private System.Windows.Forms.Button btnReMove;
+        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.Button btnToiUuHoa;
+        private System.Windows.Forms.CheckBox checkNotVT;
+        private System.Windows.Forms.CheckBox checkNotVP;
     }
 }

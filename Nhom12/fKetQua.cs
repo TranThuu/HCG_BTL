@@ -15,7 +15,8 @@ namespace Nhom12
 {
     public partial class fKetQua : Form
     {
-        public static ThuatToanSuyDienTien sdt = new ThuatToanSuyDienTien();
+        List<Luat> ll = new List<Luat>(DP_Luat.listLuat());
+        public static ThuatToanSuyDienTien sdt;
         List<string> laptop = new List<string>();
         DP_Laptop lt = new DP_Laptop();
 
@@ -34,6 +35,7 @@ namespace Nhom12
         
         private void fKetQua_Load(object sender, EventArgs e)
         {
+            sdt = new ThuatToanSuyDienTien(fTuVan.selectedAnswer(), ll);
             findLaptop();
             if (laptop.Count > 0)
             {
@@ -63,6 +65,7 @@ namespace Nhom12
         }
         void findLaptop()
         {
+            
             List<String> TG = sdt.ThuatToan();
             
             for(int i = 0; i < TG.Count; i++)
@@ -95,6 +98,7 @@ namespace Nhom12
         
         private void fLamLai_Click(object sender, EventArgs e)
         {
+            
             fMain.OpenChildForm(new fTuVan());
         }
         public static List<GiaiThich> allGiaiThich()

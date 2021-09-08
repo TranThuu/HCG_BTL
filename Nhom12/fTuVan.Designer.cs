@@ -50,27 +50,29 @@ namespace Nhom12
             this.checkBox5 = new System.Windows.Forms.CheckBox();
             this.checkBox6 = new System.Windows.Forms.CheckBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.btnStart = new FontAwesome.Sharp.IconButton();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel3.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbQuestion
             // 
-            this.lbQuestion.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lbQuestion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lbQuestion.AutoSize = true;
             this.lbQuestion.BackColor = System.Drawing.Color.Transparent;
             this.lbQuestion.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
             this.lbQuestion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(17)))), ((int)(((byte)(15)))));
-            this.lbQuestion.Location = new System.Drawing.Point(210, 158);
+            this.lbQuestion.Location = new System.Drawing.Point(207, 158);
             this.lbQuestion.Name = "lbQuestion";
             this.lbQuestion.Size = new System.Drawing.Size(598, 40);
             this.lbQuestion.TabIndex = 1;
@@ -80,7 +82,7 @@ namespace Nhom12
             // 
             this.rdb1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.rdb1.AutoSize = true;
-            this.rdb1.Location = new System.Drawing.Point(217, 258);
+            this.rdb1.Location = new System.Drawing.Point(214, 258);
             this.rdb1.Name = "rdb1";
             this.rdb1.Size = new System.Drawing.Size(73, 26);
             this.rdb1.TabIndex = 2;
@@ -92,7 +94,7 @@ namespace Nhom12
             // 
             this.rdb2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.rdb2.AutoSize = true;
-            this.rdb2.Location = new System.Drawing.Point(217, 303);
+            this.rdb2.Location = new System.Drawing.Point(214, 303);
             this.rdb2.Name = "rdb2";
             this.rdb2.Size = new System.Drawing.Size(87, 26);
             this.rdb2.TabIndex = 2;
@@ -104,7 +106,7 @@ namespace Nhom12
             // 
             this.rdb3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.rdb3.AutoSize = true;
-            this.rdb3.Location = new System.Drawing.Point(217, 350);
+            this.rdb3.Location = new System.Drawing.Point(214, 350);
             this.rdb3.Name = "rdb3";
             this.rdb3.Size = new System.Drawing.Size(113, 26);
             this.rdb3.TabIndex = 2;
@@ -116,7 +118,7 @@ namespace Nhom12
             // 
             this.rdb4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.rdb4.AutoSize = true;
-            this.rdb4.Location = new System.Drawing.Point(217, 400);
+            this.rdb4.Location = new System.Drawing.Point(214, 400);
             this.rdb4.Name = "rdb4";
             this.rdb4.Size = new System.Drawing.Size(73, 26);
             this.rdb4.TabIndex = 2;
@@ -132,7 +134,7 @@ namespace Nhom12
             this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNext.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold);
             this.btnNext.ForeColor = System.Drawing.SystemColors.Info;
-            this.btnNext.Location = new System.Drawing.Point(397, 24);
+            this.btnNext.Location = new System.Drawing.Point(612, 24);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(142, 62);
             this.btnNext.TabIndex = 3;
@@ -148,7 +150,7 @@ namespace Nhom12
             this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReset.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold);
             this.btnReset.ForeColor = System.Drawing.SystemColors.Info;
-            this.btnReset.Location = new System.Drawing.Point(187, 24);
+            this.btnReset.Location = new System.Drawing.Point(184, 24);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(142, 62);
             this.btnReset.TabIndex = 3;
@@ -162,10 +164,10 @@ namespace Nhom12
             this.panel1.Controls.Add(this.btnReset);
             this.panel1.Controls.Add(this.btnBack);
             this.panel1.Controls.Add(this.btnNext);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 504);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(3, 495);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1035, 111);
+            this.panel1.Size = new System.Drawing.Size(1029, 117);
             this.panel1.TabIndex = 4;
             // 
             // btnBack
@@ -176,7 +178,7 @@ namespace Nhom12
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBack.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold);
             this.btnBack.ForeColor = System.Drawing.SystemColors.Info;
-            this.btnBack.Location = new System.Drawing.Point(610, 24);
+            this.btnBack.Location = new System.Drawing.Point(409, 24);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(142, 62);
             this.btnBack.TabIndex = 3;
@@ -188,7 +190,7 @@ namespace Nhom12
             // 
             this.rdb5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.rdb5.AutoSize = true;
-            this.rdb5.Location = new System.Drawing.Point(577, 254);
+            this.rdb5.Location = new System.Drawing.Point(574, 254);
             this.rdb5.Name = "rdb5";
             this.rdb5.Size = new System.Drawing.Size(73, 26);
             this.rdb5.TabIndex = 2;
@@ -198,10 +200,10 @@ namespace Nhom12
             // 
             // rdb6
             // 
-            this.rdb6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.rdb6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.rdb6.AutoSize = true;
             this.rdb6.BackColor = System.Drawing.Color.Transparent;
-            this.rdb6.Location = new System.Drawing.Point(577, 301);
+            this.rdb6.Location = new System.Drawing.Point(574, 301);
             this.rdb6.Name = "rdb6";
             this.rdb6.Size = new System.Drawing.Size(87, 26);
             this.rdb6.TabIndex = 2;
@@ -211,10 +213,10 @@ namespace Nhom12
             // 
             // rdb7
             // 
-            this.rdb7.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.rdb7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.rdb7.AutoSize = true;
             this.rdb7.BackColor = System.Drawing.Color.Transparent;
-            this.rdb7.Location = new System.Drawing.Point(577, 351);
+            this.rdb7.Location = new System.Drawing.Point(574, 351);
             this.rdb7.Name = "rdb7";
             this.rdb7.Size = new System.Drawing.Size(113, 26);
             this.rdb7.TabIndex = 2;
@@ -224,12 +226,12 @@ namespace Nhom12
             // 
             // lbStart
             // 
-            this.lbStart.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lbStart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lbStart.AutoSize = true;
             this.lbStart.BackColor = System.Drawing.Color.Transparent;
             this.lbStart.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
             this.lbStart.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(17)))), ((int)(((byte)(15)))));
-            this.lbStart.Location = new System.Drawing.Point(183, 168);
+            this.lbStart.Location = new System.Drawing.Point(180, 168);
             this.lbStart.Name = "lbStart";
             this.lbStart.Size = new System.Drawing.Size(604, 40);
             this.lbStart.TabIndex = 1;
@@ -237,12 +239,12 @@ namespace Nhom12
             // 
             // lbStart2
             // 
-            this.lbStart2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lbStart2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lbStart2.AutoSize = true;
             this.lbStart2.BackColor = System.Drawing.Color.Transparent;
             this.lbStart2.Font = new System.Drawing.Font("Century Gothic", 13F);
             this.lbStart2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(17)))), ((int)(((byte)(15)))));
-            this.lbStart2.Location = new System.Drawing.Point(228, 208);
+            this.lbStart2.Location = new System.Drawing.Point(225, 208);
             this.lbStart2.Name = "lbStart2";
             this.lbStart2.Size = new System.Drawing.Size(486, 25);
             this.lbStart2.TabIndex = 1;
@@ -253,7 +255,7 @@ namespace Nhom12
             this.checkBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.checkBox1.AutoSize = true;
             this.checkBox1.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox1.Location = new System.Drawing.Point(217, 259);
+            this.checkBox1.Location = new System.Drawing.Point(214, 259);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(133, 26);
             this.checkBox1.TabIndex = 6;
@@ -262,10 +264,10 @@ namespace Nhom12
             // 
             // checkBox2
             // 
-            this.checkBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.checkBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.checkBox2.AutoSize = true;
             this.checkBox2.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox2.Location = new System.Drawing.Point(217, 303);
+            this.checkBox2.Location = new System.Drawing.Point(214, 303);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(133, 26);
             this.checkBox2.TabIndex = 6;
@@ -274,10 +276,10 @@ namespace Nhom12
             // 
             // checkBox3
             // 
-            this.checkBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.checkBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.checkBox3.AutoSize = true;
             this.checkBox3.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox3.Location = new System.Drawing.Point(217, 351);
+            this.checkBox3.Location = new System.Drawing.Point(214, 351);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(133, 26);
             this.checkBox3.TabIndex = 6;
@@ -286,10 +288,10 @@ namespace Nhom12
             // 
             // checkBox4
             // 
-            this.checkBox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.checkBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.checkBox4.AutoSize = true;
             this.checkBox4.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox4.Location = new System.Drawing.Point(217, 400);
+            this.checkBox4.Location = new System.Drawing.Point(214, 400);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(133, 26);
             this.checkBox4.TabIndex = 6;
@@ -298,10 +300,10 @@ namespace Nhom12
             // 
             // checkBox5
             // 
-            this.checkBox5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.checkBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.checkBox5.AutoSize = true;
             this.checkBox5.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox5.Location = new System.Drawing.Point(577, 254);
+            this.checkBox5.Location = new System.Drawing.Point(574, 254);
             this.checkBox5.Name = "checkBox5";
             this.checkBox5.Size = new System.Drawing.Size(133, 26);
             this.checkBox5.TabIndex = 6;
@@ -310,9 +312,9 @@ namespace Nhom12
             // 
             // checkBox6
             // 
-            this.checkBox6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.checkBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(577, 301);
+            this.checkBox6.Location = new System.Drawing.Point(574, 301);
             this.checkBox6.Name = "checkBox6";
             this.checkBox6.Size = new System.Drawing.Size(133, 26);
             this.checkBox6.TabIndex = 6;
@@ -343,21 +345,10 @@ namespace Nhom12
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1035, 615);
+            this.panel2.Size = new System.Drawing.Size(1029, 486);
             this.panel2.TabIndex = 11;
-            // 
-            // panel3
-            // 
-            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel3.Controls.Add(this.panel1);
-            this.panel3.Controls.Add(this.panel2);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1035, 615);
-            this.panel3.TabIndex = 12;
             // 
             // btnStart
             // 
@@ -373,7 +364,7 @@ namespace Nhom12
             this.btnStart.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnStart.IconSize = 40;
             this.btnStart.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStart.Location = new System.Drawing.Point(356, 327);
+            this.btnStart.Location = new System.Drawing.Point(353, 327);
             this.btnStart.Name = "btnStart";
             this.btnStart.Padding = new System.Windows.Forms.Padding(26, 0, 0, 0);
             this.btnStart.Size = new System.Drawing.Size(168, 71);
@@ -396,6 +387,7 @@ namespace Nhom12
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.pictureBox2.BackgroundImage = global::Nhom12.Properties.Resources._175013_1;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox2.Location = new System.Drawing.Point(-43, 158);
@@ -406,6 +398,7 @@ namespace Nhom12
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BackgroundImage = global::Nhom12.Properties.Resources.nen4;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(746, -31);
@@ -413,6 +406,31 @@ namespace Nhom12
             this.pictureBox1.Size = new System.Drawing.Size(390, 275);
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
+            // 
+            // panel3
+            // 
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel3.Controls.Add(this.tableLayoutPanel1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1035, 615);
+            this.panel3.TabIndex = 12;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Controls.Add(this.panel2, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 1);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1035, 615);
+            this.tableLayoutPanel1.TabIndex = 12;
             // 
             // fTuVan
             // 
@@ -430,10 +448,11 @@ namespace Nhom12
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -465,5 +484,6 @@ namespace Nhom12
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }

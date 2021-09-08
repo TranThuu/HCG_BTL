@@ -1,4 +1,5 @@
 ﻿using Nhom12.DAO;
+using Nhom12.DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,6 +18,10 @@ namespace Nhom12
         DP_Luat dpLuat = new DP_Luat();
         DP_Laptop dpLaptop = new DP_Laptop(); 
         DP_CauHinh dpCauHinh = new DP_CauHinh();
+
+        List<String> newRule = new List<string>();
+
+
         String veTrai="";
         public fLuat()
         {
@@ -24,6 +29,7 @@ namespace Nhom12
             btnReMove.Visible = false;
             txtID.Enabled = false;
             btnSua.Enabled = false;
+            btnXoa.Enabled = false;
         }
         private void dgvStyle()
         {
@@ -38,18 +44,23 @@ namespace Nhom12
                 dgvLaptop.DataSource = dpLuat.showLuat();
                 DataTable d = dpLuat.showLuat();
                 txtID.Text = "R" + (d.Rows.Count+1);
-         
-                DataTable dt = dpLaptop.showLaptop();
-                cmbVP.DataSource = dt;
-                cmbVP.DisplayMember = "Name";
-                cmbVP.ValueMember = "ID";
-
+                //Thêm vế trái
                 DataTable dt2 = dpCauHinh.showCauHinh();
                 cmbVT.DataSource = dt2;
                 cmbVT.DisplayMember = "Description";
                 cmbVT.ValueMember = "ID";
                 if (lbVT.Text != "")
                     btnReMove.Visible = true;
+                //Thêm vế phải
+                DataTable dt = dpLaptop.showLaptop();
+                int countdt2 = dt2.Rows.Count;
+                for(int i=0;i< countdt2; i++)
+                {
+                    dt.Rows.Add(dt2.Rows[i][0], dt2.Rows[i][1]);
+                }
+                cmbVP.DataSource = dt;
+                cmbVP.DisplayMember = "Name";
+                cmbVP.ValueMember = "ID";
             }
             catch (Exception ex)
             {
@@ -60,37 +71,67 @@ namespace Nhom12
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            veTrai+=cmbVT.SelectedValue.ToString()+"^";
+            btnReMove.Visible = true;
+            String vt = checkNotVT.Checked ? ("!" + cmbVT.SelectedValue.ToString()) : cmbVT.SelectedValue.ToString();
+            newRule.Add(vt);
+            veTrai+=vt+"^";
             lbVT.Text = veTrai.Remove(veTrai.Length - 1);
+            checkNotVT.Checked = false;
         }
 
         private void btnThem_Click(object sender, EventArgs e)
         {
             try
-            {   
+            {
                 if (lbVT.Text == "")
                     throw new Exception("Hãy thêm vế trái cho tập luật");
-                dpLuat.InsertLuat(txtID.Text, lbVT.Text, cmbVP.SelectedValue.ToString());
-                btnCancel_Click(sender, e);
-                MessageBox.Show("Thêm Luật thành công!","Thông báo",MessageBoxButtons.OK);
+                
+                //Loại bỏ luật dư thừa khi thêm luật
+                ThuatToanSuyDienTien sdt = new ThuatToanSuyDienTien(newRule, dpLuat.listLuat2());
+                List<String> GT = sdt.ThuatToan();
+                String vp = checkNotVP.Checked ? ("!" + cmbVP.SelectedValue.ToString()) : cmbVP.SelectedValue.ToString();
+                Boolean result = GT.Contains(vp);
+
+                if (!result)
+                {
+                    dpLuat.InsertLuat(txtID.Text, lbVT.Text, vp);
+                    btnCancel_Click(sender, e);
+                    MessageBox.Show("Thêm Luật thành công!","Thông báo",MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Thêm Luật KHÔNG thành công, do luật bị dư thừa", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                checkNotVP.Checked = false;
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void dgvLaptop_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                btnReMove.Visible = true;
+                btnSua.Enabled = true;
+                btnXoa.Enabled = true;
+                btnThem.Enabled = false;
+                int index = e.RowIndex;
+                txtID.Text = dgvLaptop.Rows[index].Cells[0].Value.ToString();
+                cmbVP.SelectedValue = dgvLaptop.Rows[index].Cells[2].Value.ToString();
+                lbVT.Text = dgvLaptop.Rows[index].Cells[1].Value.ToString();
+                veTrai = lbVT.Text + "^";
             }catch(Exception ex)
             {
                 MessageBox.Show(ex.Message, "Thông báo", MessageBoxButtons.OK);
             }
         }
 
-        private void dgvLaptop_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            btnReMove.Visible = true;
-            btnSua.Enabled = true;
-            int index = e.RowIndex;
-            txtID.Text = dgvLaptop.Rows[index].Cells[0].Value.ToString();
-            cmbVP.SelectedValue = dgvLaptop.Rows[index].Cells[2].Value.ToString();
-            lbVT.Text = dgvLaptop.Rows[index].Cells[1].Value.ToString();
-        }
-
         private void btnRemove_Click(object sender, EventArgs e)
         {
+            newRule.Clear();
             veTrai = "";
             lbVT.Text = "";
         }
@@ -102,8 +143,41 @@ namespace Nhom12
                 if (lbVT.Text == "")
                     throw new Exception("Hãy thêm vế trái cho tập luật");
                 dpLuat.SuaLuat(txtID.Text, lbVT.Text, cmbVP.SelectedValue.ToString());
+                MessageBox.Show("Sửa Luật thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 btnCancel_Click(sender, e);
-                MessageBox.Show("Sửa Luật thành công!", "Thông báo", MessageBoxButtons.OK);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            btnXoa.Enabled = false;
+            btnSua.Enabled = false;
+            btnThem.Enabled = true;
+            newRule.Clear();
+            veTrai = "";
+            lbVT.Text = "";
+            fLuat_Load(sender, e); 
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DialogResult result = MessageBox.Show("Bạn có chắc muốn xóa luật này không?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                if(result == DialogResult.OK)
+                {
+                    dpLuat.XoaLuat(txtID.Text);
+                    MessageBox.Show("Xóa Luật thành công!", "Thông báo", MessageBoxButtons.OK);
+                }
+                else
+                {
+                    MessageBox.Show("Hủy xóa Luật thành công!", "Thông báo", MessageBoxButtons.OK);
+                }
+                btnCancel_Click(sender, e);
             }
             catch (Exception ex)
             {
@@ -111,10 +185,47 @@ namespace Nhom12
             }
         }
 
-        private void btnCancel_Click(object sender, EventArgs e)
-        {   
-            lbVT.Text = "";
-            fLuat_Load(sender, e); 
-        }
+        private void btnToiUuHoa_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //DataTable dt = dpLuat.showLuat();
+                List<String> tapDuThua = new List<string>();
+                List<Luat> listluat = dpLuat.listLuat2();
+                List<Luat> listluat2 = dpLuat.listLuat2();
+                int LuatCount = listluat.Count;
+
+                for (int i = 0; i < LuatCount; i++)
+                {
+                    List<String> vt = listluat[i].VeTrai.Split('^').ToList();
+                    listluat2 = new List<Luat>(listluat);
+                    listluat2.RemoveAt(i);
+                    ThuatToanSuyDienTien sdt = new ThuatToanSuyDienTien(vt, listluat2);
+                    List<String> GT = sdt.ThuatToan();
+                    Boolean result = GT.Contains(listluat[i].VePhai);
+                    if (result)
+                    {
+                        tapDuThua.Add(listluat[i].ID1.ToString());
+                        listluat.RemoveAt(i);
+                        LuatCount --;
+                        i--; 
+                    }
+                }
+                String tapDuThuaString = "";
+                foreach (String a in tapDuThua)
+                    tapDuThuaString += a+", ";
+                DialogResult kq = MessageBox.Show("Các luật dư thừa: "+ tapDuThuaString+"\n Bạn có muốn xóa chúng không?","Thông báo", MessageBoxButtons.OKCancel,MessageBoxIcon.Question);
+                if(kq == DialogResult.OK)
+                {
+                    foreach(String a in tapDuThua)
+                        dpLuat.XoaLuat(a);
+                    MessageBox.Show("Xóa các luật dư thừa thành công!", "Thông báo", MessageBoxButtons.OK);
+                    btnCancel_Click(sender, e);
+                }
+            }catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Thông báo", MessageBoxButtons.OK);
+            }
+}
     }
 }

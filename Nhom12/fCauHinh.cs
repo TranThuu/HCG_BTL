@@ -151,6 +151,7 @@ namespace Nhom12
             btnSua.Enabled = false;
             txtID.Clear();
             txtMoTa.Clear();
+            fCauHinh_Load(sender, e);
         }
     }
 }

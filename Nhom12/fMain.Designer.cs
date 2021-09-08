@@ -29,37 +29,38 @@ namespace Nhom12
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fMain));
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.pnlSubMenu = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.labTitle = new System.Windows.Forms.Label();
-            this.panelContent = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.iconTeam = new FontAwesome.Sharp.IconPictureBox();
-            this.btnMax = new FontAwesome.Sharp.IconButton();
-            this.btnClose = new FontAwesome.Sharp.IconButton();
-            this.btnMini = new FontAwesome.Sharp.IconButton();
             this.btnThoat = new FontAwesome.Sharp.IconButton();
             this.btnNhom = new FontAwesome.Sharp.IconButton();
             this.btnHuongDan = new FontAwesome.Sharp.IconButton();
+            this.pnlSubMenu = new System.Windows.Forms.Panel();
             this.btnCauHinh = new FontAwesome.Sharp.IconButton();
             this.btnLuat = new FontAwesome.Sharp.IconButton();
             this.btnLaptop = new FontAwesome.Sharp.IconButton();
             this.btnCoSoTriThuc = new FontAwesome.Sharp.IconButton();
             this.btnTuVan = new FontAwesome.Sharp.IconButton();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.iconTeam = new FontAwesome.Sharp.IconPictureBox();
+            this.btnMax = new FontAwesome.Sharp.IconButton();
+            this.labTitle = new System.Windows.Forms.Label();
+            this.btnClose = new FontAwesome.Sharp.IconButton();
+            this.btnMini = new FontAwesome.Sharp.IconButton();
+            this.panelContent = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelMenu.SuspendLayout();
             this.pnlSubMenu.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconTeam)).BeginInit();
             this.panelContent.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconTeam)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -112,143 +113,6 @@ namespace Nhom12
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(316, 749);
             this.panelMenu.TabIndex = 1;
-            // 
-            // pnlSubMenu
-            // 
-            this.pnlSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(75)))), ((int)(((byte)(105)))));
-            this.pnlSubMenu.Controls.Add(this.btnCauHinh);
-            this.pnlSubMenu.Controls.Add(this.btnLuat);
-            this.pnlSubMenu.Controls.Add(this.btnLaptop);
-            this.pnlSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlSubMenu.Location = new System.Drawing.Point(0, 301);
-            this.pnlSubMenu.Name = "pnlSubMenu";
-            this.pnlSubMenu.Size = new System.Drawing.Size(316, 180);
-            this.pnlSubMenu.TabIndex = 3;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
-            this.panel1.Controls.Add(this.iconPictureBox2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(316, 181);
-            this.panel1.TabIndex = 1;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(52)))), ((int)(((byte)(67)))));
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.iconTeam);
-            this.panel2.Controls.Add(this.btnMax);
-            this.panel2.Controls.Add(this.labTitle);
-            this.panel2.Controls.Add(this.btnClose);
-            this.panel2.Controls.Add(this.btnMini);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(316, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1075, 74);
-            this.panel2.TabIndex = 2;
-            this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
-            // 
-            // labTitle
-            // 
-            this.labTitle.AutoSize = true;
-            this.labTitle.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(140)))));
-            this.labTitle.Location = new System.Drawing.Point(275, 24);
-            this.labTitle.Name = "labTitle";
-            this.labTitle.Size = new System.Drawing.Size(86, 30);
-            this.labTitle.TabIndex = 0;
-            this.labTitle.Text = "HOME";
-            // 
-            // panelContent
-            // 
-            this.panelContent.BackColor = System.Drawing.Color.White;
-            this.panelContent.Controls.Add(this.pictureBox1);
-            this.panelContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContent.ForeColor = System.Drawing.Color.Black;
-            this.panelContent.Location = new System.Drawing.Point(316, 74);
-            this.panelContent.Name = "panelContent";
-            this.panelContent.Size = new System.Drawing.Size(1075, 675);
-            this.panelContent.TabIndex = 3;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::Nhom12.Properties.Resources.Untitled_11;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1075, 675);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // iconTeam
-            // 
-            this.iconTeam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(52)))), ((int)(((byte)(67)))));
-            this.iconTeam.IconChar = FontAwesome.Sharp.IconChar.Fish;
-            this.iconTeam.IconColor = System.Drawing.Color.White;
-            this.iconTeam.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconTeam.IconSize = 62;
-            this.iconTeam.Location = new System.Drawing.Point(26, 7);
-            this.iconTeam.Name = "iconTeam";
-            this.iconTeam.Size = new System.Drawing.Size(62, 62);
-            this.iconTeam.TabIndex = 2;
-            this.iconTeam.TabStop = false;
-            // 
-            // btnMax
-            // 
-            this.btnMax.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMax.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMax.FlatAppearance.BorderSize = 0;
-            this.btnMax.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMax.IconChar = FontAwesome.Sharp.IconChar.Square;
-            this.btnMax.IconColor = System.Drawing.Color.WhiteSmoke;
-            this.btnMax.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnMax.IconSize = 23;
-            this.btnMax.Location = new System.Drawing.Point(997, 12);
-            this.btnMax.Name = "btnMax";
-            this.btnMax.Size = new System.Drawing.Size(31, 27);
-            this.btnMax.TabIndex = 6;
-            this.btnMax.UseVisualStyleBackColor = true;
-            this.btnMax.Click += new System.EventHandler(this.iconButton2_Click);
-            // 
-            // btnClose
-            // 
-            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClose.FlatAppearance.BorderSize = 0;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.IconChar = FontAwesome.Sharp.IconChar.Times;
-            this.btnClose.IconColor = System.Drawing.Color.WhiteSmoke;
-            this.btnClose.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnClose.IconSize = 23;
-            this.btnClose.Location = new System.Drawing.Point(1032, 12);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(31, 27);
-            this.btnClose.TabIndex = 4;
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // btnMini
-            // 
-            this.btnMini.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMini.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMini.FlatAppearance.BorderSize = 0;
-            this.btnMini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMini.IconChar = FontAwesome.Sharp.IconChar.Minus;
-            this.btnMini.IconColor = System.Drawing.Color.WhiteSmoke;
-            this.btnMini.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnMini.IconSize = 23;
-            this.btnMini.Location = new System.Drawing.Point(966, 12);
-            this.btnMini.Name = "btnMini";
-            this.btnMini.Size = new System.Drawing.Size(31, 27);
-            this.btnMini.TabIndex = 5;
-            this.btnMini.UseVisualStyleBackColor = true;
-            this.btnMini.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // btnThoat
             // 
@@ -318,6 +182,18 @@ namespace Nhom12
             this.btnHuongDan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnHuongDan.UseVisualStyleBackColor = false;
             this.btnHuongDan.Click += new System.EventHandler(this.btnHuongDan_Click);
+            // 
+            // pnlSubMenu
+            // 
+            this.pnlSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(75)))), ((int)(((byte)(105)))));
+            this.pnlSubMenu.Controls.Add(this.btnCauHinh);
+            this.pnlSubMenu.Controls.Add(this.btnLuat);
+            this.pnlSubMenu.Controls.Add(this.btnLaptop);
+            this.pnlSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlSubMenu.Location = new System.Drawing.Point(0, 301);
+            this.pnlSubMenu.Name = "pnlSubMenu";
+            this.pnlSubMenu.Size = new System.Drawing.Size(316, 180);
+            this.pnlSubMenu.TabIndex = 3;
             // 
             // btnCauHinh
             // 
@@ -434,6 +310,18 @@ namespace Nhom12
             this.btnTuVan.UseVisualStyleBackColor = false;
             this.btnTuVan.Click += new System.EventHandler(this.btnTuVan_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(54)))));
+            this.panel1.Controls.Add(this.iconPictureBox2);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(316, 181);
+            this.panel1.TabIndex = 1;
+            // 
             // iconPictureBox2
             // 
             this.iconPictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -450,6 +338,119 @@ namespace Nhom12
             this.iconPictureBox2.TabIndex = 9;
             this.iconPictureBox2.TabStop = false;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(52)))), ((int)(((byte)(67)))));
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.iconTeam);
+            this.panel2.Controls.Add(this.btnMax);
+            this.panel2.Controls.Add(this.labTitle);
+            this.panel2.Controls.Add(this.btnClose);
+            this.panel2.Controls.Add(this.btnMini);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(316, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1075, 74);
+            this.panel2.TabIndex = 2;
+            this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
+            // 
+            // iconTeam
+            // 
+            this.iconTeam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(52)))), ((int)(((byte)(67)))));
+            this.iconTeam.IconChar = FontAwesome.Sharp.IconChar.Fish;
+            this.iconTeam.IconColor = System.Drawing.Color.White;
+            this.iconTeam.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconTeam.IconSize = 62;
+            this.iconTeam.Location = new System.Drawing.Point(26, 7);
+            this.iconTeam.Name = "iconTeam";
+            this.iconTeam.Size = new System.Drawing.Size(62, 62);
+            this.iconTeam.TabIndex = 2;
+            this.iconTeam.TabStop = false;
+            // 
+            // btnMax
+            // 
+            this.btnMax.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMax.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMax.FlatAppearance.BorderSize = 0;
+            this.btnMax.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMax.IconChar = FontAwesome.Sharp.IconChar.Square;
+            this.btnMax.IconColor = System.Drawing.Color.WhiteSmoke;
+            this.btnMax.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnMax.IconSize = 23;
+            this.btnMax.Location = new System.Drawing.Point(997, 12);
+            this.btnMax.Name = "btnMax";
+            this.btnMax.Size = new System.Drawing.Size(31, 27);
+            this.btnMax.TabIndex = 6;
+            this.btnMax.UseVisualStyleBackColor = true;
+            this.btnMax.Click += new System.EventHandler(this.iconButton2_Click);
+            // 
+            // labTitle
+            // 
+            this.labTitle.AutoSize = true;
+            this.labTitle.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(140)))));
+            this.labTitle.Location = new System.Drawing.Point(275, 24);
+            this.labTitle.Name = "labTitle";
+            this.labTitle.Size = new System.Drawing.Size(86, 30);
+            this.labTitle.TabIndex = 0;
+            this.labTitle.Text = "HOME";
+            // 
+            // btnClose
+            // 
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.IconChar = FontAwesome.Sharp.IconChar.Times;
+            this.btnClose.IconColor = System.Drawing.Color.WhiteSmoke;
+            this.btnClose.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnClose.IconSize = 23;
+            this.btnClose.Location = new System.Drawing.Point(1032, 12);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(31, 27);
+            this.btnClose.TabIndex = 4;
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // btnMini
+            // 
+            this.btnMini.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMini.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMini.FlatAppearance.BorderSize = 0;
+            this.btnMini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMini.IconChar = FontAwesome.Sharp.IconChar.Minus;
+            this.btnMini.IconColor = System.Drawing.Color.WhiteSmoke;
+            this.btnMini.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnMini.IconSize = 23;
+            this.btnMini.Location = new System.Drawing.Point(966, 12);
+            this.btnMini.Name = "btnMini";
+            this.btnMini.Size = new System.Drawing.Size(31, 27);
+            this.btnMini.TabIndex = 5;
+            this.btnMini.UseVisualStyleBackColor = true;
+            this.btnMini.Click += new System.EventHandler(this.iconButton1_Click);
+            // 
+            // panelContent
+            // 
+            this.panelContent.BackColor = System.Drawing.Color.White;
+            this.panelContent.Controls.Add(this.pictureBox1);
+            this.panelContent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContent.ForeColor = System.Drawing.Color.Black;
+            this.panelContent.Location = new System.Drawing.Point(316, 74);
+            this.panelContent.Name = "panelContent";
+            this.panelContent.Size = new System.Drawing.Size(1075, 675);
+            this.panelContent.TabIndex = 3;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::Nhom12.Properties.Resources.Untitled_11;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1075, 675);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // fMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
@@ -462,6 +463,7 @@ namespace Nhom12
             this.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "fMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -471,12 +473,12 @@ namespace Nhom12
             this.pnlSubMenu.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconTeam)).EndInit();
             this.panelContent.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconTeam)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }

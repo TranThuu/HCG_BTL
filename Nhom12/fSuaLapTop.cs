@@ -44,7 +44,7 @@ namespace Nhom12
                     txtCard.Text = dt.Rows[0]["CardManHinh"].ToString();
                     cbbHDH.Text = dt.Rows[0]["HeDieuHanh"].ToString();
                     txtKichThuoc.Text = dt.Rows[0]["KichThuoc"].ToString();
-                    ptbAnh.Image = ConvertByArrayToImage((byte[])dt.Rows[0]["Image"]);
+                    ptbAnh.Image = ConvertByArrayToImage((byte[])dt.Rows[0]["AnhLaptop"]);
                 }
             }
             catch (Exception ex)

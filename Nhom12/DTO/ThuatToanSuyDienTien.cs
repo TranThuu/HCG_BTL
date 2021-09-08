@@ -17,13 +17,15 @@ namespace Nhom12.DTO
 
         public List<GiaiThich> giaiThich = new List<GiaiThich>();
 
+        public ThuatToanSuyDienTien(List<String> TG, List<Luat> R)
+        {
+            this.TG = TG;
+            this.R = new List<Luat>(R);
+        }
+
         public List<String> ThuatToan()
         {
             giaiThich.Clear();
-            DP_DuLieu data = new DP_DuLieu();
-            // khởi tạo
-            TG = fTuVan.selectedAnswer();
-            R = data.listLuat();
             checkAddSAT(TG);
 
             //add giaiThich
@@ -40,7 +42,6 @@ namespace Nhom12.DTO
                 giaiThich.Add(new GiaiThich(r, TG.ToList(), SAT.ToList(), R));
             }
             return TG;
-            
         }
 
         private void checkAddSAT(List<String> TG)

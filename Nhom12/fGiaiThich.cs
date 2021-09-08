@@ -1,4 +1,5 @@
-﻿using Nhom12.DTO;
+﻿using Nhom12.DAO;
+using Nhom12.DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,9 +13,10 @@ using System.Windows.Forms;
 namespace Nhom12
 {
     public partial class fGiaiThich : Form
-    {   
-        ThuatToanSuyDienTien tt = new ThuatToanSuyDienTien();
+    {
+        DP_Luat dpLuat = new DP_Luat();
 
+        //ThuatToanSuyDienTien tt = new ThuatToanSuyDienTien(fTuVan.selectedAnswer(), DP_Luat.listLuat());
         public static DataGridView dgvGiaiThich = new DataGridView();
 
         public fGiaiThich()
@@ -31,7 +33,9 @@ namespace Nhom12
         private void fKetQua_Load(object sender, EventArgs e)
         {
             dgvStyle();
+
             List<GiaiThich> giaiThich = new List<GiaiThich>();
+            
             giaiThich.AddRange(fKetQua.allGiaiThich());
             int dem = 0;
             foreach (GiaiThich gt in giaiThich)
