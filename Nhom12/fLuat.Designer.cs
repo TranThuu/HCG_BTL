@@ -29,9 +29,9 @@ namespace Nhom12
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvLaptop = new System.Windows.Forms.DataGridView();
             this.dID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dveTrai = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,9 +41,11 @@ namespace Nhom12
             this.txtID = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnNotVT = new System.Windows.Forms.Panel();
+            this.checkNotVT = new System.Windows.Forms.CheckBox();
+            this.checkNotVP = new System.Windows.Forms.CheckBox();
             this.cmbVT = new System.Windows.Forms.ComboBox();
             this.cmbVP = new System.Windows.Forms.ComboBox();
-            this.btnToiUuHoa = new System.Windows.Forms.Button();
+            this.btnLoaiBoLuatThua = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
@@ -54,8 +56,6 @@ namespace Nhom12
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.checkNotVP = new System.Windows.Forms.CheckBox();
-            this.checkNotVT = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLaptop)).BeginInit();
             this.panel1.SuspendLayout();
             this.btnNotVT.SuspendLayout();
@@ -71,27 +71,27 @@ namespace Nhom12
             this.dgvLaptop.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvLaptop.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dgvLaptop.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.LightSteelBlue;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 10.8F);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvLaptop.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.LightSteelBlue;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Century Gothic", 10.8F);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvLaptop.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dgvLaptop.ColumnHeadersHeight = 50;
             this.dgvLaptop.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dID,
             this.dveTrai,
             this.dvePhai});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 10.8F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(161)))), ((int)(((byte)(251)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.AliceBlue;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvLaptop.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Century Gothic", 10.8F);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(161)))), ((int)(((byte)(251)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.AliceBlue;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvLaptop.DefaultCellStyle = dataGridViewCellStyle8;
             this.dgvLaptop.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnF2;
             this.dgvLaptop.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dgvLaptop.Location = new System.Drawing.Point(50, 18);
@@ -99,14 +99,14 @@ namespace Nhom12
             this.dgvLaptop.Name = "dgvLaptop";
             this.dgvLaptop.ReadOnly = true;
             this.dgvLaptop.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.GrayText;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 10.8F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvLaptop.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.GrayText;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Century Gothic", 10.8F);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvLaptop.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.dgvLaptop.RowHeadersVisible = false;
             this.dgvLaptop.RowHeadersWidth = 45;
             this.dgvLaptop.RowTemplate.Height = 40;
@@ -200,7 +200,7 @@ namespace Nhom12
             this.btnNotVT.Controls.Add(this.checkNotVP);
             this.btnNotVT.Controls.Add(this.cmbVT);
             this.btnNotVT.Controls.Add(this.cmbVP);
-            this.btnNotVT.Controls.Add(this.btnToiUuHoa);
+            this.btnNotVT.Controls.Add(this.btnLoaiBoLuatThua);
             this.btnNotVT.Controls.Add(this.btnXoa);
             this.btnNotVT.Controls.Add(this.btnCancel);
             this.btnNotVT.Controls.Add(this.btnThem);
@@ -220,6 +220,26 @@ namespace Nhom12
             this.btnNotVT.Name = "btnNotVT";
             this.btnNotVT.Size = new System.Drawing.Size(1073, 186);
             this.btnNotVT.TabIndex = 5;
+            // 
+            // checkNotVT
+            // 
+            this.checkNotVT.AutoSize = true;
+            this.checkNotVT.Location = new System.Drawing.Point(871, 14);
+            this.checkNotVT.Name = "checkNotVT";
+            this.checkNotVT.Size = new System.Drawing.Size(65, 26);
+            this.checkNotVT.TabIndex = 5;
+            this.checkNotVT.Text = "Not";
+            this.checkNotVT.UseVisualStyleBackColor = true;
+            // 
+            // checkNotVP
+            // 
+            this.checkNotVP.AutoSize = true;
+            this.checkNotVP.Location = new System.Drawing.Point(448, 66);
+            this.checkNotVP.Name = "checkNotVP";
+            this.checkNotVP.Size = new System.Drawing.Size(65, 26);
+            this.checkNotVP.TabIndex = 5;
+            this.checkNotVP.Text = "Not";
+            this.checkNotVP.UseVisualStyleBackColor = true;
             // 
             // cmbVT
             // 
@@ -241,22 +261,22 @@ namespace Nhom12
             this.cmbVP.Size = new System.Drawing.Size(289, 29);
             this.cmbVP.TabIndex = 4;
             // 
-            // btnToiUuHoa
+            // btnLoaiBoLuatThua
             // 
-            this.btnToiUuHoa.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnToiUuHoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(161)))), ((int)(((byte)(251)))));
-            this.btnToiUuHoa.FlatAppearance.BorderSize = 0;
-            this.btnToiUuHoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnToiUuHoa.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnToiUuHoa.ForeColor = System.Drawing.Color.AliceBlue;
-            this.btnToiUuHoa.Location = new System.Drawing.Point(871, 118);
-            this.btnToiUuHoa.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.btnToiUuHoa.Name = "btnToiUuHoa";
-            this.btnToiUuHoa.Size = new System.Drawing.Size(169, 52);
-            this.btnToiUuHoa.TabIndex = 3;
-            this.btnToiUuHoa.Text = "Tối ưu hóa luật";
-            this.btnToiUuHoa.UseVisualStyleBackColor = false;
-            this.btnToiUuHoa.Click += new System.EventHandler(this.btnToiUuHoa_Click);
+            this.btnLoaiBoLuatThua.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnLoaiBoLuatThua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(161)))), ((int)(((byte)(251)))));
+            this.btnLoaiBoLuatThua.FlatAppearance.BorderSize = 0;
+            this.btnLoaiBoLuatThua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLoaiBoLuatThua.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLoaiBoLuatThua.ForeColor = System.Drawing.Color.AliceBlue;
+            this.btnLoaiBoLuatThua.Location = new System.Drawing.Point(871, 118);
+            this.btnLoaiBoLuatThua.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.btnLoaiBoLuatThua.Name = "btnLoaiBoLuatThua";
+            this.btnLoaiBoLuatThua.Size = new System.Drawing.Size(169, 52);
+            this.btnLoaiBoLuatThua.TabIndex = 3;
+            this.btnLoaiBoLuatThua.Text = "Loại bỏ luật dư thừa";
+            this.btnLoaiBoLuatThua.UseVisualStyleBackColor = false;
+            this.btnLoaiBoLuatThua.Click += new System.EventHandler(this.btnLoaiBoLuatThua_Click);
             // 
             // btnXoa
             // 
@@ -406,26 +426,6 @@ namespace Nhom12
             this.panel3.Size = new System.Drawing.Size(1073, 648);
             this.panel3.TabIndex = 7;
             // 
-            // checkNotVP
-            // 
-            this.checkNotVP.AutoSize = true;
-            this.checkNotVP.Location = new System.Drawing.Point(448, 66);
-            this.checkNotVP.Name = "checkNotVP";
-            this.checkNotVP.Size = new System.Drawing.Size(65, 26);
-            this.checkNotVP.TabIndex = 5;
-            this.checkNotVP.Text = "Not";
-            this.checkNotVP.UseVisualStyleBackColor = true;
-            // 
-            // checkNotVT
-            // 
-            this.checkNotVT.AutoSize = true;
-            this.checkNotVT.Location = new System.Drawing.Point(871, 14);
-            this.checkNotVT.Name = "checkNotVT";
-            this.checkNotVT.Size = new System.Drawing.Size(65, 26);
-            this.checkNotVT.TabIndex = 5;
-            this.checkNotVT.Text = "Not";
-            this.checkNotVT.UseVisualStyleBackColor = true;
-            // 
             // fLuat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
@@ -470,7 +470,7 @@ namespace Nhom12
         private System.Windows.Forms.DataGridViewTextBoxColumn dvePhai;
         private System.Windows.Forms.Button btnReMove;
         private System.Windows.Forms.Button btnXoa;
-        private System.Windows.Forms.Button btnToiUuHoa;
+        private System.Windows.Forms.Button btnLoaiBoLuatThua;
         private System.Windows.Forms.CheckBox checkNotVT;
         private System.Windows.Forms.CheckBox checkNotVP;
     }

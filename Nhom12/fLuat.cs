@@ -185,7 +185,7 @@ namespace Nhom12
             }
         }
 
-        private void btnToiUuHoa_Click(object sender, EventArgs e)
+        private void btnLoaiBoLuatThua_Click(object sender, EventArgs e)
         {
             try
             {
@@ -207,25 +207,26 @@ namespace Nhom12
                     {
                         tapDuThua.Add(listluat[i].ID1.ToString());
                         listluat.RemoveAt(i);
-                        LuatCount --;
-                        i--; 
+                        LuatCount--;
+                        i--;
                     }
                 }
                 String tapDuThuaString = "";
                 foreach (String a in tapDuThua)
-                    tapDuThuaString += a+", ";
-                DialogResult kq = MessageBox.Show("Các luật dư thừa: "+ tapDuThuaString+"\n Bạn có muốn xóa chúng không?","Thông báo", MessageBoxButtons.OKCancel,MessageBoxIcon.Question);
-                if(kq == DialogResult.OK)
+                    tapDuThuaString += a + ", ";
+                DialogResult kq = MessageBox.Show("Các luật dư thừa: " + tapDuThuaString + "\n Bạn có muốn xóa chúng không?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                if (kq == DialogResult.OK)
                 {
-                    foreach(String a in tapDuThua)
+                    foreach (String a in tapDuThua)
                         dpLuat.XoaLuat(a);
                     MessageBox.Show("Xóa các luật dư thừa thành công!", "Thông báo", MessageBoxButtons.OK);
                     btnCancel_Click(sender, e);
                 }
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Thông báo", MessageBoxButtons.OK);
             }
-}
+        }
     }
 }
