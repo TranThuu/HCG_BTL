@@ -29,9 +29,9 @@ namespace Nhom12
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvLaptop = new System.Windows.Forms.DataGridView();
             this.dID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dveTrai = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,7 +56,6 @@ namespace Nhom12
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.btnSKDT = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLaptop)).BeginInit();
             this.panel1.SuspendLayout();
             this.btnNotVT.SuspendLayout();
@@ -72,27 +71,27 @@ namespace Nhom12
             this.dgvLaptop.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvLaptop.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dgvLaptop.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.LightSteelBlue;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Century Gothic", 10.8F);
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvLaptop.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.LightSteelBlue;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 10.8F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvLaptop.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvLaptop.ColumnHeadersHeight = 50;
             this.dgvLaptop.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dID,
             this.dveTrai,
             this.dvePhai});
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Century Gothic", 10.8F);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(161)))), ((int)(((byte)(251)))));
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.AliceBlue;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvLaptop.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 10.8F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(161)))), ((int)(((byte)(251)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.AliceBlue;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvLaptop.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvLaptop.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnF2;
             this.dgvLaptop.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dgvLaptop.Location = new System.Drawing.Point(50, 18);
@@ -100,14 +99,14 @@ namespace Nhom12
             this.dgvLaptop.Name = "dgvLaptop";
             this.dgvLaptop.ReadOnly = true;
             this.dgvLaptop.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.GrayText;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Century Gothic", 10.8F);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvLaptop.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.GrayText;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 10.8F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvLaptop.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvLaptop.RowHeadersVisible = false;
             this.dgvLaptop.RowHeadersWidth = 45;
             this.dgvLaptop.RowTemplate.Height = 40;
@@ -170,7 +169,7 @@ namespace Nhom12
             this.label1.Location = new System.Drawing.Point(-62, 37);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(23, 18);
+            this.label1.Size = new System.Drawing.Size(28, 23);
             this.label1.TabIndex = 1;
             this.label1.Text = "ID";
             // 
@@ -181,7 +180,7 @@ namespace Nhom12
             this.txtID.Location = new System.Drawing.Point(153, 14);
             this.txtID.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(220, 24);
+            this.txtID.Size = new System.Drawing.Size(220, 29);
             this.txtID.TabIndex = 2;
             // 
             // panel1
@@ -197,7 +196,6 @@ namespace Nhom12
             // btnNotVT
             // 
             this.btnNotVT.BackColor = System.Drawing.Color.Transparent;
-            this.btnNotVT.Controls.Add(this.btnSKDT);
             this.btnNotVT.Controls.Add(this.checkNotVT);
             this.btnNotVT.Controls.Add(this.checkNotVP);
             this.btnNotVT.Controls.Add(this.cmbVT);
@@ -228,7 +226,7 @@ namespace Nhom12
             this.checkNotVT.AutoSize = true;
             this.checkNotVT.Location = new System.Drawing.Point(871, 14);
             this.checkNotVT.Name = "checkNotVT";
-            this.checkNotVT.Size = new System.Drawing.Size(54, 24);
+            this.checkNotVT.Size = new System.Drawing.Size(65, 26);
             this.checkNotVT.TabIndex = 5;
             this.checkNotVT.Text = "Not";
             this.checkNotVT.UseVisualStyleBackColor = true;
@@ -238,7 +236,7 @@ namespace Nhom12
             this.checkNotVP.AutoSize = true;
             this.checkNotVP.Location = new System.Drawing.Point(448, 66);
             this.checkNotVP.Name = "checkNotVP";
-            this.checkNotVP.Size = new System.Drawing.Size(54, 24);
+            this.checkNotVP.Size = new System.Drawing.Size(65, 26);
             this.checkNotVP.TabIndex = 5;
             this.checkNotVP.Text = "Not";
             this.checkNotVP.UseVisualStyleBackColor = true;
@@ -250,7 +248,7 @@ namespace Nhom12
             this.cmbVT.FormattingEnabled = true;
             this.cmbVT.Location = new System.Drawing.Point(593, 14);
             this.cmbVT.Name = "cmbVT";
-            this.cmbVT.Size = new System.Drawing.Size(272, 24);
+            this.cmbVT.Size = new System.Drawing.Size(272, 29);
             this.cmbVT.TabIndex = 4;
             // 
             // cmbVP
@@ -260,7 +258,7 @@ namespace Nhom12
             this.cmbVP.FormattingEnabled = true;
             this.cmbVP.Location = new System.Drawing.Point(153, 63);
             this.cmbVP.Name = "cmbVP";
-            this.cmbVP.Size = new System.Drawing.Size(289, 24);
+            this.cmbVP.Size = new System.Drawing.Size(289, 29);
             this.cmbVP.TabIndex = 4;
             // 
             // btnLoaiBoLuatThua
@@ -375,7 +373,7 @@ namespace Nhom12
             this.label3.Location = new System.Drawing.Point(89, 16);
             this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(23, 18);
+            this.label3.Size = new System.Drawing.Size(28, 23);
             this.label3.TabIndex = 1;
             this.label3.Text = "ID";
             // 
@@ -388,7 +386,7 @@ namespace Nhom12
             this.lbVT.Location = new System.Drawing.Point(589, 69);
             this.lbVT.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbVT.Name = "lbVT";
-            this.lbVT.Size = new System.Drawing.Size(0, 18);
+            this.lbVT.Size = new System.Drawing.Size(0, 23);
             this.lbVT.TabIndex = 1;
             // 
             // label4
@@ -400,7 +398,7 @@ namespace Nhom12
             this.label4.Location = new System.Drawing.Point(46, 66);
             this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 18);
+            this.label4.Size = new System.Drawing.Size(77, 23);
             this.label4.TabIndex = 1;
             this.label4.Text = "Vế phải";
             // 
@@ -413,7 +411,7 @@ namespace Nhom12
             this.label2.Location = new System.Drawing.Point(516, 11);
             this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 18);
+            this.label2.Size = new System.Drawing.Size(68, 23);
             this.label2.TabIndex = 1;
             this.label2.Text = "Vế trái";
             // 
@@ -428,26 +426,9 @@ namespace Nhom12
             this.panel3.Size = new System.Drawing.Size(1073, 648);
             this.panel3.TabIndex = 7;
             // 
-            // btnSKDT
-            // 
-            this.btnSKDT.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnSKDT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(161)))), ((int)(((byte)(251)))));
-            this.btnSKDT.FlatAppearance.BorderSize = 0;
-            this.btnSKDT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSKDT.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSKDT.ForeColor = System.Drawing.Color.AliceBlue;
-            this.btnSKDT.Location = new System.Drawing.Point(697, 61);
-            this.btnSKDT.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.btnSKDT.Name = "btnSKDT";
-            this.btnSKDT.Size = new System.Drawing.Size(109, 52);
-            this.btnSKDT.TabIndex = 6;
-            this.btnSKDT.Text = "SKDT";
-            this.btnSKDT.UseVisualStyleBackColor = false;
-            this.btnSKDT.Click += new System.EventHandler(this.btnSKDT_Click);
-            // 
             // fLuat
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1073, 648);
@@ -492,6 +473,5 @@ namespace Nhom12
         private System.Windows.Forms.Button btnLoaiBoLuatThua;
         private System.Windows.Forms.CheckBox checkNotVT;
         private System.Windows.Forms.CheckBox checkNotVP;
-        private System.Windows.Forms.Button btnSKDT;
     }
 }

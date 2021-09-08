@@ -22,6 +22,9 @@ namespace Nhom12
         List<String> newRule = new List<string>();
         String vePhai = "";
         String veTrai="";
+        int index = 125;
+        DataTable dtVT1 = new DataTable();
+        DataTable dtVT2 = new DataTable();
         public fLuat()
         {
             InitializeComponent();
@@ -42,20 +45,22 @@ namespace Nhom12
             {
                 dgvLaptop.DataSource = dpLuat.showLuat();
                 DataTable d = dpLuat.showLuat();
-                txtID.Text = "R" + (d.Rows.Count+1);
+                txtID.Text = "R" + index;
                 //Thêm vế trái
-                DataTable dt2 = dpCauHinh.showCauHinh();
-                cmbVT.DataSource = dt2;
+                dtVT2 = dpCauHinh.showCauHinh();
+                dtVT1 = dtVT2.Copy();
+                
+                cmbVT.DataSource = dtVT1;
                 cmbVT.DisplayMember = "Description";
                 cmbVT.ValueMember = "ID";
                 if (lbVT.Text != "")
                     btnReMove.Visible = true;
                 //Thêm vế phải
                 DataTable dt = dpLaptop.showLaptop();
-                int countdt2 = dt2.Rows.Count;
+                int countdt2 = dtVT1.Rows.Count;
                 for(int i=0;i< countdt2; i++)
                 {
-                    dt.Rows.Add(dt2.Rows[i][0], dt2.Rows[i][1]);
+                    dt.Rows.Add(dtVT1.Rows[i][0], dtVT1.Rows[i][1]);
                 }
                 cmbVP.DataSource = dt;
                 cmbVP.DisplayMember = "Name";
@@ -70,12 +75,19 @@ namespace Nhom12
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            btnReMove.Visible = true;
-            String vt = checkNotVT.Checked ? ("!" + cmbVT.SelectedValue.ToString()) : cmbVT.SelectedValue.ToString();
-            newRule.Add(vt);
-            veTrai+=vt+"^";
-            lbVT.Text = veTrai.Remove(veTrai.Length - 1);
-            checkNotVT.Checked = false;
+            try
+            {
+                btnReMove.Visible = true;
+                String vt = checkNotVT.Checked ? ("!" + cmbVT.SelectedValue.ToString()) : cmbVT.SelectedValue.ToString();
+                dtVT1.Rows.RemoveAt(cmbVT.SelectedIndex);
+                newRule.Add(vt);
+                veTrai += vt + "^";
+                lbVT.Text = veTrai.Remove(veTrai.Length - 1);
+                checkNotVT.Checked = false;
+            }catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private void btnThem_Click(object sender, EventArgs e)
@@ -102,6 +114,7 @@ namespace Nhom12
                     {
                         LoaiBoSuKienDuThua();
                         dpLuat.InsertLuat(txtID.Text, lbVT.Text, vePhai);
+                        index++;
                         btnCancel_Click(sender, e);
                         MessageBox.Show("Thêm Luật thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
@@ -142,6 +155,7 @@ namespace Nhom12
             newRule.Clear();
             veTrai = "";
             lbVT.Text = "";
+            fLuat_Load(sender, e);
         }
 
         private void btnSua_Click(object sender, EventArgs e)
@@ -283,11 +297,6 @@ namespace Nhom12
             String vtString = "";
             vtString = vt.Remove(vt.Length - 1);
             lbVT.Text = vtString;//hiển thị lên label
-        }
-
-        private void btnSKDT_Click(object sender, EventArgs e)
-        {
-            LoaiBoSuKienDuThua();
         }
     }
 }

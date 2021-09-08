@@ -18,7 +18,7 @@ namespace Nhom12
         public fLaptop()
         {
             InitializeComponent();
-            
+
         }
         private void dgvStyle()
         {
@@ -32,7 +32,8 @@ namespace Nhom12
             {
                 //dgvLaptop.DataSource = dpLaptop.showLapTopPaging(1);
                 dgvLaptop.DataSource = dpLaptop.showLaptop();
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -56,7 +57,7 @@ namespace Nhom12
                     dgvLaptop.DataSource = dpLaptop.showLapTopByID(txtID.Text);
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -73,46 +74,6 @@ namespace Nhom12
             fSuaLapTop frmSua = new fSuaLapTop();
             frmSua.Sender(ID);
             frmSua.Show();
-        }
-
-        //phân trang
-
-        private void btnPrevious_Click_1(object sender, EventArgs e)
-        {
-            int page = Convert.ToInt32(txtSoTrang.Text);
-
-            if (page > 1)
-                page--;
-
-            txtSoTrang.Text = page.ToString();
-        }
-
-        private void btnNext_Click_1(object sender, EventArgs e)
-        {
-            int page = Convert.ToInt32(txtSoTrang.Text);
-            int sumRecord = dpLaptop.TongLapTop();
-            int lastPage = sumRecord / 9;
-
-            if (sumRecord % 9 != 0)
-                lastPage++;
-
-            if (page < lastPage)
-                page++;
-
-            txtSoTrang.Text = page.ToString();
-        }
-
-        private void txtSoTrang_TextChanged(object sender, EventArgs e)
-        {
-            dgvLaptop.DataSource = dpLaptop.showLapTopPaging(int.Parse(txtSoTrang.Text));
-        }
-
-        private void dgvLaptop_SelectionChanged(object sender, EventArgs e)
-        {
-            foreach (DataGridViewRow row in dgvLaptop.SelectedRows)
-            {
-                ID = row.Cells[0].Value.ToString();
-            }
         }
     }
 }
