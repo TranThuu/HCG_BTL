@@ -20,8 +20,7 @@ namespace Nhom12
         DP_CauHinh dpCauHinh = new DP_CauHinh();
 
         List<String> newRule = new List<string>();
-
-
+        String vePhai = "";
         String veTrai="";
         public fLuat()
         {
@@ -89,18 +88,27 @@ namespace Nhom12
                 //Loại bỏ luật dư thừa khi thêm luật
                 ThuatToanSuyDienTien sdt = new ThuatToanSuyDienTien(newRule, dpLuat.listLuat2());
                 List<String> GT = sdt.ThuatToan();
-                String vp = checkNotVP.Checked ? ("!" + cmbVP.SelectedValue.ToString()) : cmbVP.SelectedValue.ToString();
-                Boolean result = GT.Contains(vp);
-
-                if (!result)
+                vePhai = checkNotVP.Checked ? ("!" + cmbVP.SelectedValue.ToString()) : cmbVP.SelectedValue.ToString();
+                String notVP = checkNotVP.Checked ? (cmbVP.SelectedValue.ToString()) : ("!" + cmbVP.SelectedValue.ToString());
+                Boolean result = GT.Contains(vePhai);
+                Boolean mauThuan = GT.Contains(notVP);
+                if (mauThuan)
                 {
-                    dpLuat.InsertLuat(txtID.Text, lbVT.Text, vp);
-                    btnCancel_Click(sender, e);
-                    MessageBox.Show("Thêm Luật thành công!","Thông báo",MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Thêm Luật KHÔNG thành công, do mâu thuẫn với CSTT", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
-                    MessageBox.Show("Thêm Luật KHÔNG thành công, do luật bị dư thừa", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    if (!result)
+                    {
+                        LoaiBoSuKienDuThua();
+                        dpLuat.InsertLuat(txtID.Text, lbVT.Text, vePhai);
+                        btnCancel_Click(sender, e);
+                        MessageBox.Show("Thêm Luật thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Thêm Luật KHÔNG thành công, do luật bị dư thừa", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
                 }
                 checkNotVP.Checked = false;
             }
@@ -227,6 +235,59 @@ namespace Nhom12
             {
                 MessageBox.Show(ex.Message, "Thông báo", MessageBoxButtons.OK);
             }
+        }
+        private void LoaiBoSuKienDuThua()
+        {
+            List<string> r1 = new List<string>();
+            List<string> r2 = new List<string>();
+            string vt = "";
+            foreach (string sk in newRule)
+            {
+                r1.Add(sk);
+                r2.Add(sk);
+            }
+            String suKien = "";
+            List<string> suKienDuThua = new List<string>();
+            for (int i = 0; i < newRule.Count(); i++)
+            {
+                suKien = newRule[i];
+                r1.RemoveAt(i);//xóa sự kiện đang xét 
+                vt = veTrai.Replace(suKien,string.Empty);//vế trái bằng vế trái của luật trừ sự kiện đang xét
+                vePhai = checkNotVP.Checked ? ("!" + cmbVP.SelectedValue.ToString()) : cmbVP.SelectedValue.ToString();
+                dpLuat.InsertLuat(txtID.Text, vt, vePhai);
+                ThuatToanSuyDienTien sdt = new ThuatToanSuyDienTien(r1, dpLuat.listLuat2());
+                List<string> TG = sdt.ThuatToan();
+                Boolean result = TG.Contains(vePhai);
+                if (result)
+                {
+                    suKienDuThua.Add(suKien);
+                    r2.Remove(suKien);
+                }
+                r1.Add(newRule[i]);//thêm lại sự kiện đang xét để đc luật ban đầu
+                dpLuat.XoaLuat(txtID.Text);
+            }
+            String suKienDuThuaString = "";
+            foreach (String a in suKienDuThua)
+            {
+                suKienDuThuaString += a + ", ";
+            }
+            if (suKienDuThuaString != "")
+            {
+                MessageBox.Show("Các sự kiện dư thừa " + suKienDuThuaString, "Thông báo", MessageBoxButtons.OK);
+            }
+            vt = "";
+            foreach(string a in r2)
+            {
+                vt += a + " ^";//vế trái sau khi bỏ các sự kiện thừa
+            }
+            String vtString = "";
+            vtString = vt.Remove(vt.Length - 1);
+            lbVT.Text = vtString;//hiển thị lên label
+        }
+
+        private void btnSKDT_Click(object sender, EventArgs e)
+        {
+            LoaiBoSuKienDuThua();
         }
     }
 }

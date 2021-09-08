@@ -129,3 +129,26 @@ E:\kỳ 7\HCG\btl\HCG_BTL\Nhom12\bin\Debug\Nhom12.pdb
 E:\kỳ 7\HCG\btl\HCG_BTL\Nhom12\bin\Debug\FontAwesome.Sharp.dll
 E:\kỳ 7\HCG\btl\HCG_BTL\Nhom12\bin\Debug\OpenHtmlToPdf.dll
 E:\kỳ 7\HCG\btl\HCG_BTL\Nhom12\obj\Debug\Nhom12_HCG.csproj.CopyComplete
+G:\3.2.HCG\1.BTL_12(latest)\HCG_BTL\Nhom12\bin\Debug\Nhom12.exe.config
+G:\3.2.HCG\1.BTL_12(latest)\HCG_BTL\Nhom12\bin\Debug\Nhom12.exe
+G:\3.2.HCG\1.BTL_12(latest)\HCG_BTL\Nhom12\bin\Debug\Nhom12.pdb
+G:\3.2.HCG\1.BTL_12(latest)\HCG_BTL\Nhom12\bin\Debug\FontAwesome.Sharp.dll
+G:\3.2.HCG\1.BTL_12(latest)\HCG_BTL\Nhom12\bin\Debug\OpenHtmlToPdf.dll
+G:\3.2.HCG\1.BTL_12(latest)\HCG_BTL\Nhom12\obj\Debug\Nhom12_HCG.csprojAssemblyReference.cache
+G:\3.2.HCG\1.BTL_12(latest)\HCG_BTL\Nhom12\obj\Debug\Nhom12.fCauHinh.resources
+G:\3.2.HCG\1.BTL_12(latest)\HCG_BTL\Nhom12\obj\Debug\Nhom12.fGiaiThich.resources
+G:\3.2.HCG\1.BTL_12(latest)\HCG_BTL\Nhom12\obj\Debug\Nhom12.fKetQua.resources
+G:\3.2.HCG\1.BTL_12(latest)\HCG_BTL\Nhom12\obj\Debug\Nhom12.fLaptop.resources
+G:\3.2.HCG\1.BTL_12(latest)\HCG_BTL\Nhom12\obj\Debug\Nhom12.fHuongDan.resources
+G:\3.2.HCG\1.BTL_12(latest)\HCG_BTL\Nhom12\obj\Debug\Nhom12.fLuat.resources
+G:\3.2.HCG\1.BTL_12(latest)\HCG_BTL\Nhom12\obj\Debug\Nhom12.fMain.resources
+G:\3.2.HCG\1.BTL_12(latest)\HCG_BTL\Nhom12\obj\Debug\Nhom12.fSuaLapTop.resources
+G:\3.2.HCG\1.BTL_12(latest)\HCG_BTL\Nhom12\obj\Debug\Nhom12.fTeam.resources
+G:\3.2.HCG\1.BTL_12(latest)\HCG_BTL\Nhom12\obj\Debug\Nhom12.fThemLapTop.resources
+G:\3.2.HCG\1.BTL_12(latest)\HCG_BTL\Nhom12\obj\Debug\Nhom12.fTuVan.resources
+G:\3.2.HCG\1.BTL_12(latest)\HCG_BTL\Nhom12\obj\Debug\Nhom12.Properties.Resources.resources
+G:\3.2.HCG\1.BTL_12(latest)\HCG_BTL\Nhom12\obj\Debug\Nhom12_HCG.csproj.GenerateResource.cache
+G:\3.2.HCG\1.BTL_12(latest)\HCG_BTL\Nhom12\obj\Debug\Nhom12_HCG.csproj.CoreCompileInputs.cache
+G:\3.2.HCG\1.BTL_12(latest)\HCG_BTL\Nhom12\obj\Debug\Nhom12_HCG.csproj.CopyComplete
+G:\3.2.HCG\1.BTL_12(latest)\HCG_BTL\Nhom12\obj\Debug\Nhom12.exe
+G:\3.2.HCG\1.BTL_12(latest)\HCG_BTL\Nhom12\obj\Debug\Nhom12.pdb
